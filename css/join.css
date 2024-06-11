@@ -1,0 +1,92 @@
+.header{
+    position: relative;
+    z-index: 9999;
+}
+.main{
+        width: 100%;
+        height: 1500px;
+        position: relative;
+}
+.join{
+        width:380px;
+        height: 25px;
+        margin-bottom: 10px;
+        border:1px solid #ddd;
+        outline: none;
+        padding: 10px;
+}
+.join_box{
+        width: 900px;
+        height: 1300px;
+        position: absolute;
+        top: 30%;
+        left: 80%;
+        transform: translateX(-80%) translateY(-30%);
+    }
+    .join_txt{
+        font-size: 14px;
+        font-weight: 900;
+        margin: 10px 0;
+    }
+    .join_txt:nth-child(1){
+        font-size: 20px;
+    }
+    .phone{
+        width:100px;
+        height: 25px;
+        margin-bottom: 10px;
+        border:1px solid #ddd;
+        outline: none;
+        padding: 10px;
+    }
+    .post1{
+        width: 291px;
+        height: 45px;
+        outline: none;
+        background-color: #ededed;
+        border: 1px solid #fff;
+    }
+    .post2{
+        background-color: #ededed;
+        border: 1px solid #fff;
+    }
+    #years{
+        width: 125px;
+        height: 45px;
+        outline: none;
+        padding: 10px;
+
+    }
+    #month,#day{
+        width: 80px;    
+        height: 45px;
+        outline: none;
+        padding: 10px;
+
+    }
+    label{
+        font-size: 14px;
+        font-weight: 900;
+    }
+    .chk_info{
+        color: #ed6d00;
+    }
+    .join_sub{
+        width: 253px;
+        height: 54px;
+        margin: 30px 100px;
+        font-weight: 900;
+        cursor: pointer;
+        background-color: #ed6d00;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    @media screen and (max-width:640px){
+        .join_box{
+        width: 640px;
+        height: 1300px;
+        top: 30%;
+        left: 15%;
+        transform: translateX(-15%) translateY(-30%);
+    }
+    }

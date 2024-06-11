@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li class="li1">
+                <a href="#">logo</a>
+            </li>
+            <li class="li2"><a href="#">브랜드</a></li>
+            <li class="li3"><span>제품</span>
+                <ul class="sub_menu menu_box">
+                    <li><a href="#">게이밍 기어</a></li>
+                    <li><a href="#">PC부품</a></li>
+                    <li><a href="#">책상.의자</a></li>
+                </ul>
+            </li>
+            <li class="li4"><span>다운로드</span>
+                <ul class="sub_menu menu_box2">
+                    <li><a href="#">PIX SYSTEM</a></li>
+                    <li><a href="#">UNIX SYSTEM</a></li>
+                </ul>
+            </li>
+            <li class="li5"><span>고객지원</span>
+                <ul class="sub_menu menu_box3">
+                    <li><a href="#">A/S문의</a></li>
+                    <li><a href="#">택배 A/S 안내</a></li>
+                    <li><a href="#">제품보증</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="li6"><span>SNS</span>
+                <ul class="sub_menu menu_box4">
+                    <li><a href="https://blog.naver.com/cougarkor" target="_blank">블로그</a></li>
+                    <li><a href="https://www.instagram.com/cougargaming_kr/" target="_blank">인스타그램</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCIJZ5v0i8qzaTn9a_XDOMTA" target="_blank">유튜브</a></li>
+                </ul>
+            </li>
+            <li class="li7"><a href="./store.html">쇼핑몰</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="main"></div>
+    <div class="banner">
+        <div class="banner_box box_1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LkZ24Z_S0fw?si=dlTA7pTvVtD6myID&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="banner_box box_2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/P3YA89dUq_Y?si=DBhXjSNl060cOkDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="banner_box box_3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kmwCWkW5G3o?si=4cYm8yifLbe-24xB&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="banner_box box_4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c99KZL8oVso?si=oPr9C8RtqiKPQXDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="slide_btn slide_btn_L"><</div>
+        <div class="slide_btn slide_btn_R">></div>
+
+        <div class="indi"></div>
+
+    </div>
+    <div class="mail">
+        <div class="txt1">대량 구매 및 마케팅 문의</div>
+        <div class="txt2">(cougar@cougar-world.co.kr)</div>
+
+    </div>
+    <div class="footer">
+        <div class="con_box">
+            <a href="#"><div class="logo_img"></div></a>
+            <div class="sns_logo">
+                <img class="sns_img" src="./img/facebook.png" alt="">
+                <img class="sns_img" src="./img/instagram.png" alt="">
+                <img class="sns_img" src="./img/youtube.png" alt="">
+                <img class="sns_img" src="./img/twitter.png" alt="">
+                <img class="sns_img" src="./img/ppp.png" alt="">
+            </div>
+            <div class="foot_nav">
+                <a href="#"><span>회사소개</span></a>
+                <span class="foot_line">|</span>
+                <a href="#"><span>오시는길</span></a>
+                <span class="foot_line">|</span>
+                <a href="#"><span>A/S 안내</span></a>
+            </div>
+            <div class="foot_txt">
+                <div>상호: 쿠거글로벌 주식회사 | 대표: 김흥배 | 개인정보관리책임자: 최윤성 | 고객센터: 070-7443-7754</div>
+                <div>이메일: cougar@cougar-world.co.kr</div>
+                <div>주소: 서울시 용산구 원효로 158 하나빌딩, 401호  | 사업자등록번호: 373-87-02760 | 통신판매: 제2022-서울용산-0851호</div>
+            </div>
+            <div class="foot_global">
+            <a href="https://cougargaming.com/">
+            <img src="./img/main_logo2 (1).png" alt="">
+            <span>Global COUGAR</span>
+            </a>    
+        </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+        
+
+        $('.banner_box').eq(0).css({left:0})
+        let bn_length = $('.banner_box').length;
+        let bang=0;
+
+        for(let i=0; i<bn_length; i++) {
+        $('.indi').append(`<div class="circle ${i==0?'circle_active':''}"></div>`)
+    }
+        $(document).on('click', '.slide_btn_L', function(){
+            // 내보낼판 - 현재 보고있던 판
+            $('.banner_box').eq(bang % bn_length).animate({
+                left: '100%'
+            })
+
+            // 들여오판 - 화면 밖에 있는 판
+            $('.banner_box').eq((bang - 1) % bn_length).css({
+                left: '-100%'
+            }).animate({
+                left: 0
+            })
+
+            bang-=1;
+            indi_color()
+
+        });
+        $(document).on('click', '.slide_btn_R', function(){
+            $('.banner_box').eq(bang % bn_length).animate({
+                left: '-100%'
+            })
+
+            $('.banner_box').eq((bang + 1) % bn_length).css({
+                left: '100%'
+            }).animate({
+                left: 0
+            })
+
+            bang+=1;
+            indi_color()
+        });
+
+        function indi_color() {
+        $('.circle').removeClass('circle_active');
+        $('.circle').eq(bang % bn_length).addClass('circle_active');
+        }
+
+        $('.circle').click(function(){
+
+        let gap = $(this).index() - $('.circle_active').index();
+
+        if(gap > 0) {
+            for(let i=0; i<gap; i++) {
+                $('.slide_btn_R').trigger('click')
+            }
+        }
+    
+
+        else if(gap < 0) {
+            // for(let i=0; i>gap; i--) {
+            // for(let i=0; i<Math.abs(gap); i++) {
+            for(let i=0; i<gap*-1; i++) {
+                $('.slide_btn_L').trigger('click')
+            }
+    
+            } 
+        })
+    })
+        
+    </script>
+</body>
+</html>

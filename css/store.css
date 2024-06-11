@@ -1,0 +1,379 @@
+/* ==========배너========== */
+.main_banner{
+    width: 100%;
+    height: 660px;
+    padding-top:150px;
+    /*background: url(../img/쿠거\ 스토어/main_banner.png) no-repeat center /cover;*/
+}
+/* =====미니배너공통========== */
+.mini_banner{
+    width: 100%;
+    height: 150px;
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+}
+/* ============슬라이드배너1========= */
+.slide_banner{
+    width:100%;
+    height: 700px;
+    position: relative;
+}
+.slide_box{
+    width: 1170px;
+    height: 670px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+}
+.slide_box > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide_btn{
+    color: #fff;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 35px;
+    position: absolute;
+    top:50%;
+    text-align: center;
+    background-color: rgba(0,0,0,.12);
+}
+.slide_btn_L{
+    left:0;
+}
+.slide_btn_R{
+    right:0;
+}
+/* ============인기상품========== */
+.txt_best{
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top:50px ;
+}
+.best_area{
+    width: 100%;
+    height: 950px;
+}
+.best_content{
+    width: 80%;
+    height: 100%;
+    margin:0 auto;
+}
+.best_box{
+    width: calc(100% / 4);
+    height: 450px;
+    box-sizing: border-box;
+    float: left;
+}
+.best_img_box{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    opacity: 1;
+}
+.best_img_box > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.item_desc{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+.item1{
+    margin-top:10px;
+}
+.b_price{
+    color: orangered;
+}
+.b_O_price{
+    text-decoration: line-through;
+}
+.best_img_box > img:hover{
+    opacity: 0;
+}
+/* ========신상품============= */
+.txt_new{
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top:50px ;
+}
+.new_area{
+    width: 100%;
+    height: 400px;
+}
+.new_content{
+    width: 80%;
+    height: 100%;
+    margin:0 auto;
+}
+.new_box{
+    width: calc(100% / 4);
+    height: 400px;
+    box-sizing: border-box;
+    float: left;
+}
+.new_img_box{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    opacity: 1;
+}
+.new_img_box > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.item_desc{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+.item2{
+    margin-top:10px;
+}
+.new_img_box > img:hover{
+    opacity: 0;
+}
+/* ==========인스타 배너========== */
+.txt_insta{
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top:50px ;
+}
+/* ==========슬라이드 배너 */
+/*
+.slide_banner2{
+    width: 100%;
+    height: 185px;
+    background-color: pink;
+    position: relative;
+
+}
+
+.box2{
+    width: calc(100% / 6);
+    height: 100%;
+    top: 0;
+}
+
+.slide_btn2{
+    color: #fff;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 35px;
+    position: absolute;
+    top:50%;
+    text-align: center;
+    background-color: rgba(0,0,0,.12);
+    
+}
+
+.slide_btn_L2{
+    left:0;
+}
+.slide_btn_R2{
+    right:0;
+}
+.box2_1{background: url(../img/쿠거\ 스토어/slide2_img1.jpg) no-repeat center/cover;}
+.box2_2{background: url(../img/쿠거\ 스토어/slide2_img2.jpg) no-repeat center/cover;}
+.box2_3{background: url(../img/쿠거\ 스토어/slide2_img3.jpg) no-repeat center/cover;}
+.box2_4{background: url(../img/쿠거\ 스토어/slide2_img4.jpg) no-repeat center/cover;}
+.box2_5{background: url(../img/쿠거\ 스토어/slide2_img5.jpg) no-repeat center/cover;}
+.box2_6{background: url(../img/쿠거\ 스토어/slide2_img6.jpg) no-repeat center/cover;}
+.box2_7{background: url(../img/쿠거\ 스토어/slide2_img7.jpg) no-repeat center/cover;}
+.box2_8{background: url(../img/쿠거\ 스토어/slide2_img8.jpg) no-repeat center/cover;}
+.box2_9{background: url(../img/쿠거\ 스토어/slide2_img9.jpg) no-repeat center/cover;}
+*/
+
+.slide_banner2{
+    height: 300px;
+    position: relative;
+
+    overflow: hidden;  
+    width: 100%;
+    
+}
+.box2 {
+    width: calc(100% / 6);
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    scale: 0.9;
+}
+
+.slide_btn2 {
+    width: 50px;
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    font-size: 50px;
+
+    position: absolute;
+    top: 0;
+    color:#fff;
+    background: transparent;
+}
+.slide_btn_L2 {
+    left: 0;
+    /* background: transparent; */
+}
+.slide_btn_R2 {
+    right: 0;
+}
+.box2:hover{
+    scale:1;
+}
+.box2_1{background: url(../img/쿠거\ 스토어/slide2_img1.jpg) no-repeat center/cover;}
+.box2_2{background: url(../img/쿠거\ 스토어/slide2_img2.jpg) no-repeat center/cover;}
+.box2_3{background: url(../img/쿠거\ 스토어/slide2_img3.jpg) no-repeat center/cover;}
+.box2_4{background: url(../img/쿠거\ 스토어/slide2_img4.jpg) no-repeat center/cover;}
+.box2_5{background: url(../img/쿠거\ 스토어/slide2_img5.jpg) no-repeat center/cover;}
+.box2_6{background: url(../img/쿠거\ 스토어/slide2_img6.jpg) no-repeat center/cover;}
+.box2_7{background: url(../img/쿠거\ 스토어/slide2_img7.jpg) no-repeat center/cover;}
+.box2_8{background: url(../img/쿠거\ 스토어/slide2_img8.jpg) no-repeat center/cover;}
+.box2_9{background: url(../img/쿠거\ 스토어/slide2_img9.jpg) no-repeat center/cover;}
+
+
+
+/* ========입금정보======== */
+.info_box{
+    width: 100%;
+    height: 190px;
+    margin:50px 0 0 0;
+    display:flex;
+    gap:5px;
+    justify-content: center;
+}
+.marketing_box{
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    background-color: #ed6d00;
+    margin-top: 30px;
+}
+.marketing_box > span{
+    font-size: 40px;
+    font-weight: 900;
+}
+/*========반응형===========*/
+@media screen and (max-width:640px){
+    .main_banner{
+        padding-top:50px;
+        height: 300px;
+    }
+        .main_banner > img{
+            height: 300px;
+        }
+        .mini_banner{
+            justify-content: left;
+        }
+        .mini_banner > a > img{
+            width: 640px;
+        }
+        .slide_banner{
+            width:100%;
+            height: 700px;
+            position: relative;
+        }
+        .slide_box{
+            width: 629px;
+            height: 585px;
+            position: absolute;
+            top:0%;
+            left:0%;
+            transform: translateX(0) translateY(0);
+            overflow: hidden;
+        }
+        .txt_best{
+            width: 100px;
+            height: 160px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            margin:10px 0 0 260px;
+        }
+        .txt_new{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            margin:10px 0 0 260px;
+        }
+        .txt_insta{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            margin:10px 0 0 260px;
+        }
+        .slide_banner2{
+            width: 130%;
+            height: 200px;
+        }
+        .slide_btn2{
+            top:-50px;
+        }
+        .slide_btn_R2{
+            right: 1265px;
+        }
+        .info_box{
+            justify-content: left;
+        }
+        .info_img > img{
+            width: 306px;
+            height: 207px;
+            
+        }
+        .marketing_box{
+            text-align: left;
+        }
+        .marketing_box > span{
+            margin-left: 60px;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .best_content{
+            width: 640px;
+            height: 100%;
+            margin:0;
+        }
+        .best_box{
+            width: calc(100% / 2);
+            height: 450px;
+        }
+        .new_content{
+            width: 640px;
+            height: 100%;
+            margin:0;
+        }
+        .new_box{
+            width: calc(100% / 2);
+            height: 450px;
+        }
+}

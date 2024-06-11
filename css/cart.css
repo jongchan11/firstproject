@@ -1,0 +1,30 @@
+.header{
+    position: relative;
+    z-index: 9999;
+}
+.main{
+    width: 100%;
+    height: 440px;  
+}
+.cart_box{
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+}
+.cart_box > p{
+    font-size: 30px;
+    font-weight: 900;
+}
+.con_box{
+    padding:100px 0 ;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+@media screen and (max-width:640px){
+.cart_box{
+    width: 640px;
+    margin:0;
+}
+
+}

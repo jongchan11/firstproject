@@ -1,0 +1,144 @@
+$(document).ready(function(){
+    let btn_ham = $('.btn_ham')
+    btn_ham.on({
+        click:function(){
+            btn_ham.animate({
+                left:'88%'
+            },100)
+            $('.min_sh').css({
+                display:'none'
+            })
+            $('.pan').css({
+                display:'block'
+                
+            })
+            $('.ham_pan').animate({
+                left:0
+            },100)
+        }
+    })
+    $('.btn_close').on({
+        click:function(){
+            btn_ham.animate({
+                left:0
+            },100)
+            $('.min_sh').css({
+                display:'block'
+            })
+            $('.pan').css({
+                display:'none'
+            })
+            $('.ham_pan').animate({
+                left:'-90%'
+            },100)
+        }
+    })
+
+$('.pan_arrow').on({
+    click:function(){
+        $('.pan_arrow').css({
+            display:'none'
+        })
+        $('.pan_arrow2').css({
+            display:'block'
+        })
+        $('.pan_menu_ul').css({
+            display:'block'
+        })
+    }
+})
+$('.pan_arrow2').on({
+    click:function(){
+        $('.pan_arrow').css({
+            display:'block'
+        })
+        $('.pan_arrow2').css({
+            display:'none'
+        })
+        $('.pan_menu_ul').css({
+            display:'none'
+        })
+    }
+})
+$('.pan_arrow3').on({
+    click:function(){
+        $('.pan_arrow3').css({
+            display:'none'
+        })
+        $('.pan_arrow4').css({
+            display:'block'
+        })
+        $('.pan_menu_ul2').css({
+            display:'block'
+        })
+    }
+})
+$('.pan_arrow4').on({
+    click:function(){
+        $('.pan_arrow3').css({
+            display:'block'
+        })
+        $('.pan_arrow4').css({
+            display:'none'
+        })
+        $('.pan_menu_ul2').css({
+            display:'none'
+        })
+    }
+})
+
+$('.pan_arrow5').on({
+    click:function(){
+        $('.pan_arrow5').css({
+            display:'none'
+        })
+        $('.pan_arrow6').css({
+            display:'block'
+        })
+        $('.pan_menu_ul3').css({
+            display:'block'
+        })
+    }
+})
+$('.pan_arrow6').on({
+    click:function(){
+        $('.pan_arrow5').css({
+            display:'block'
+        })
+        $('.pan_arrow6').css({
+            display:'none'
+        })
+        $('.pan_menu_ul3').css({
+            display:'none'
+        })
+    }
+})
+
+
+$('.pan_arrow7').on({
+    click:function(){
+        $('.pan_arrow7').css({
+            display:'none'
+        })
+        $('.pan_arrow8').css({
+            display:'block'
+        })
+        $('.pan_menu_ul4').css({
+            display:'block'
+        })
+    }
+})
+$('.pan_arrow8').on({
+    click:function(){
+        $('.pan_arrow7').css({
+            display:'block'
+        })
+        $('.pan_arrow8').css({
+            display:'none'
+        })
+        $('.pan_menu_ul4').css({
+            display:'none'
+        })
+    }
+})
+})

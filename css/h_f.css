@@ -1,0 +1,405 @@
+body{
+    margin: 0;
+    min-width: 1453px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* ===========헤더============== */
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    font-family:sans-serif;
+    position: fixed;
+    z-index: 999999;
+}
+.t_header{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+.t_header > a > img{    
+    position: absolute;
+    top:10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.b_header{
+    color:#fff;
+    font-size: 21px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+.b_header > ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-left: 300px;
+}
+.h_p{ 
+    position: relative;
+    
+}
+.sub_menu
+{
+width: 190px;
+line-height: 25px;
+font-size: 20px;
+font-weight: 900;
+background: #000;
+padding: 10px 20px;
+display: none;
+position: absolute;
+top: 100%;
+left:0px;
+}
+.h_p > a:hover{
+    color: #ed6d00;
+}
+.h_p:hover > .sub_menu{
+    display: block;
+
+}
+.sub_menu > li:hover{
+    color: #ed6d00;
+}
+.tool_box{
+    width: 300px;
+    margin-left:50px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    
+}
+.tool_box > a > img{
+    position: absolute;
+}
+.s_2, .m_2 ,.sh_2{
+    display: none;
+}
+
+.s
+{
+    left: 0;
+    top: 2px;
+}
+.s_2 {
+    top:-2px;
+    left: -5px;
+}
+.m{
+    top:0;
+    left: 36px;
+
+}
+.m_2{
+    top:-2px;
+    left: 40px;
+}
+.sh{
+    top:0;
+    left: 81px;
+
+}
+.sh_2{
+    top:0;
+    left: 83px;
+}
+.s:hover
+,.m:hover,
+.sh:hover{
+    display: none;
+}
+.s:hover  ~.s_2,
+.m:hover  ~.m_2,
+.sh:hover  ~.sh_2{
+    display: block;
+}
+/*반응형 햄버거 판*/
+
+.min_header{
+    width: 640px;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+.pan{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    display: none;
+    overflow-y: auto;
+}
+.ham_pan{
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: -90%;
+    z-index: 99999;
+    
+}
+.btn_ham {
+    width: 50px;
+    height: 50px; 
+    padding: 15px;
+    box-sizing: border-box;
+    display: block; 
+    position: absolute;
+}
+.line {
+    width: 100%;
+    height: 2px;    
+    background-color: #fff;
+}
+.line:nth-child(2) {
+    margin: 5px 0;
+}
+.min_sh{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:50%;
+    left:95%;
+    transform: translateX(-95%) translateY(-50%);
+}
+.btn_close
+{
+    color: #ddd;
+    cursor: pointer;
+}
+.pan_header{
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+.pan_logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pan_my{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:10px;
+    right: 0;
+}
+.p_m{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.p_m2{
+    position: absolute;
+    right: 4px;
+    display: none;
+}
+.p_m:hover{
+    display: none;
+}
+.p_m:hover ~.p_m2{
+    display: block;
+}
+.pan_search {
+    width: 90%;
+    height: 45px;
+    margin: 30px 0;
+    margin-left:30px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(55,55,55,0.7);
+}
+.pan_s_bar {
+    width: calc(100% - 45px);
+    height: 100%;
+    box-sizing: border-box;
+    float: right;
+    border: none;
+    outline: none;
+    padding: 0 10px 0 10px;
+}
+.pan_s_icon {
+    width: 45px;
+    height: 45px;
+    float: left;
+    position: relative; 
+    cursor: pointer;
+}
+.pan_s_icon > img {
+    width: 25px;
+    position: absolute;
+    left: calc(50% - (25px / 2));
+    top: calc(50% - (25px / 2));
+}
+.pan_menu{
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+}
+.pan_menu_box{
+    position: relative;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    padding:10px;
+}
+.pan_arrow,
+.pan_arrow3,
+.pan_arrow5,
+.pan_arrow7
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.pan_arrow2,
+.pan_arrow4,
+.pan_arrow6,
+.pan_arrow8
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;            
+}
+.pan_menu_ul,
+.pan_menu_ul2,
+.pan_menu_ul3,
+.pan_menu_ul4
+{
+    width: 100%;
+    display: none;      
+
+}
+
+.pan_menu_li{
+    padding:10px;
+    margin-left:20px;
+}
+
+
+
+/* =========푸터======== */
+.footer{
+    width: 100%;
+    height: 230px;
+    border-top: 2px solid #ed6d00;
+    background-color: #f9f9f9;
+}
+.footer_box{
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+.footer_L{
+    width: 63%;
+    height: 100%;
+    float: left;
+    margin-top:20px;
+}
+.footer_L >  div{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5e5d5d;
+
+}
+.footer_L >  div > img {
+width: 100px;
+height: 16px;
+}
+
+.footer_R{
+    width: 37%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.foot_sns{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.footer2
+{   
+    width: 640px;
+    height: 230px;
+    border-top: 2px solid #ed6d00;
+    background-color: #f9f9f9;
+    display: none;
+}
+@media screen and (max-width:1440px){
+.b_header{
+    font-size: 18px;
+    }
+}
+@media screen and (max-width:1100px){
+    .b_header{
+        font-size: 14px;
+        }
+    }
+    @media screen and (max-width:80px){
+        .b_header{
+            color:#fff;
+            font-size: px;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            }
+        }
+    @media screen and (max-width:640px){
+        .header{
+            height: 50px;
+        }
+        .min_header{
+            display: block;
+        }
+        .t_header,.b_header{
+            display: none;
+        }
+        .min_log > img{
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .footer{
+            display: none;
+        }
+        .footer2{
+            display: block;
+        }
+        .sns_logo2{
+            width: 100%;
+            height: 50px;
+            margin: 30px 0 0 180px;
+        }
+        .footer2_txt{
+            color:#222222;
+            margin-left:70px;
+            margin-bottom: 20px;
+        }
+        .footer2_txt2{
+            color:#222222;
+            font-size:13px;
+            text-align: center;
+            margin:10px;
+        }
+        .footer2_txt2 > img{
+            height: 14px;
+        }
+    }
